@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Algoritmos con PseInt | Blog Académico</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f6f9;
+        }
+
+        header{
+            background:#1f4e79;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#163a5c;
+            padding:12px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            color:#ffd700;
+        }
+
+        .tema-container{
+            max-width:1000px;
+            margin:25px auto;
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,.15);
+        }
+
+        h2,h3{
+            color:#1f4e79;
+        }
+
+        pre{
+            background:#111;
+            color:#00ff88;
+            padding:15px;
+            border-radius:10px;
+            overflow:auto;
+        }
+
+        .imagen-link img{
+            width:100%;
+            max-width:800px;
+            border-radius:15px;
+            transition:.4s;
+            box-shadow:0 0 15px rgba(0,0,0,.3);
+        }
+
+        .imagen-link img:hover{
+            transform:scale(1.03);
+        }
+
+        .video{
+            text-align:center;
+        }
+
+        iframe{
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,.3);
+        }
+
+        .reflexion{
+            margin-top:30px;
+            padding:20px;
+            background:#eef5ff;
+            border-left:5px solid #1f4e79;
+            border-radius:10px;
+        }
+
+        .boton-volver{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 20px;
+            background:#1f4e79;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .boton-volver:hover{
+            background:#163a5c;
+        }
+
+        footer{
+            text-align:center;
+            background:#1f4e79;
+            color:white;
+            padding:15px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🧠 Algoritmos y Pseudocódigo con PseInt</h1>
+    <p>Pensar como programador antes de codificar</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#temas">Temas</a>
+</nav>
+
+<main>
+    <div class="tema-container">
+
+        <h2>📌 ¿Qué es PseInt?</h2>
+
+        <p>
+            PSeInt es una herramienta educativa para escribir, ejecutar y depurar
+            algoritmos utilizando pseudocódigo en español. Su objetivo es ayudar a
+            los estudiantes a desarrollar lógica de programación antes de aprender
+            lenguajes como Java, Python o C++.
+        </p>
+
+        <h3>🔁 Estructuras que aprendí</h3>
+
+        <ul>
+            <li>Variables (entero, real y cadena).</li>
+            <li>Condicionales (Si, Sino).</li>
+            <li>Ciclos (Mientras, Para y Repetir).</li>
+            <li>Funciones y Subprocesos.</li>
+        </ul>
+
+        <h3>📌 Ejemplos prácticos</h3>
+
+        <p><strong>1. Saludo personalizado:</strong></p>
+
+<pre><code>Algoritmo saludo
+    Definir nombre Como Cadena
+    Escribir "¿Cómo te llamas?"
+    Leer nombre
+    Escribir "Hola ", nombre, " bienvenido a PSeInt"
+FinAlgoritmo</code></pre>
+
+        <p><strong>2. Promedio de 5 notas:</strong></p>
+
+<pre><code>Algoritmo promedio
+    Definir n1,n2,n3,n4,n5,prom Como Real
+
+    Escribir "Ingrese 5 notas:"
+    Leer n1,n2,n3,n4,n5
+
+    prom=(n1+n2+n3+n4+n5)/5
+
+    Escribir "El promedio es: ",prom
+FinAlgoritmo</code></pre>
+
+        <p><strong>3. Área de figuras:</strong></p>
+
+<pre><code>Algoritmo areas
+
+    Definir opcion Como Entero
+
+    Escribir "1.Rectángulo"
+    Escribir "2.Triángulo"
+    Escribir "3.Círculo"
+
+    Leer opcion
+
+    Segun opcion Hacer
+
+        1:
+            Escribir "Base y altura:"
+            Leer b,h
+            Escribir "Área: ", b*h
+
+        2:
+            Escribir "Base y altura:"
+            Leer b,h
+            Escribir "Área: ", (b*h)/2
+
+        3:
+            Escribir "Radio:"
+            Leer r
+            Escribir "Área: ", PI*r^2
+
+    FinSegun
+
+FinAlgoritmo</code></pre>
+
+        <h3>🖼️ Recurso multimedia interactivo</h3>
+
+        <p>
+            🔥 Haz clic en la imagen para entrar al sitio oficial de PSeInt.
+        </p>
+
+        <a class="imagen-link"
+           href="https://pseint.sourceforge.net/"
+           target="_blank">
+
+            <img src="img/images.jpg"
+                 alt="PSeInt">
+        </a>
+
+        <br><br>
+
+        <div class="video">
+
+
+            
+
+        <div class="reflexion">
+
+            <h3>💭 Reflexión personal</h3>
+
+            <p>
+                <strong>¿Por qué elegí este tema?</strong>
+                Porque PSeInt me ayudó a entender la lógica de programación.
+                Antes intentaba escribir código directamente y me confundía,
+                pero ahora primero planteo el algoritmo y luego lo convierto
+                en código real.
+            </p>
+
+            <p>
+                <strong>¿Dónde se aplica?</strong>
+                En cualquier área de desarrollo de software, desde programas
+                sencillos hasta inteligencia artificial, aplicaciones móviles
+                y páginas web.
+            </p>
+
+        </div>
+
+        <a href="index.html" class="boton-volver">
+            ← Volver al inicio
+        </a>
+
+    </div>
+</main>
+
+<footer>
+    <p>© Blog académico - Fundamentos de programación.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PowerShell | Blog Académico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>⚙️ PowerShell – Automatización en Windows</h1>
+        <p>Más allá del CMD: scripting y objetos</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#temas">Temas</a>
+    </nav>
+
+    <main>
+        <div class="tema-container">
+            <h2>📌 ¿Qué es PowerShell?</h2>
+            <p>PowerShell es una interfaz de línea de comandos y un lenguaje de scripting desarrollado por Microsoft. A diferencia del CMD clásico, PowerShell trabaja con objetos (no solo texto) y permite automatizar tareas administrativas complejas.</p>
+            
+            <h3>🔧 Comandos básicos (cmdlets)</h3>
+            <ul>
+                <li><code>$PSVersionTable.PSVersion</code> – Muestra la versión de PowerShell.</li>
+                <li><code>Get-Help</code> – Ayuda integrada.</li>
+                <li><code>Get-Process</code> – Lista los procesos en ejecución.</li>
+                <li><code>Get-Service</code> – Muestra servicios del sistema.</li>
+                <li><code>Get-Location</code> – Directorio actual.</li>
+                <li><code>Set-Location C:\</code> – Cambia a la unidad C:.</li>
+                <li><code>New-Item -Path "UMG" -ItemType Directory</code> – Crea carpeta.</li>
+                <li><code>Set-Content</code> / <code>Get-Content</code> – Escribir/leer archivos.</li>
+                <li><code>Remove-Item</code> – Elimina archivos.</li>
+            </ul>
+
+            <h3>📌 Ejemplo práctico (propio)</h3>
+            <p>En el laboratorio, creé un script pequeño para organizar mi escritorio:</p>
+            <pre><code>Set-Location C:\Users\T310\Desktop
+New-Item -Path "UMG" -ItemType Directory
+cd UMG
+New-Item -Path "NuevoArchivo.txt" -ItemType File
+Set-Content NuevoArchivo.txt "Este es un archivo de texto creado con PowerShell."
+$nombre = "Pedro"
+$saludo = "Hola, " + $nombre
+Write-Output $saludo</code></pre>
+
+            <p>También usé <code>mkdir UMG2</code> y copié archivos de una carpeta a otra. Aprendí que con variables (<code>$nombre</code>) y concatenación puedo personalizar mensajes.</p>
+
+            <h3>🖼️ Recurso multimedia</h3>
+            <img src="img/power.jpg"
+                 alt="Ejemplo de comandos PowerShell"
+                 style="max-width:100%; height:auto;">
+
+            <br><br>
+
+            <a href="https://www.youtube.com/watch?v=kfEpjj2NZxU"
+               target="_blank"
+               rel="noopener noreferrer"
+               style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #0f172a, #1e293b); padding: 10px 20px; border-radius: 40px; text-decoration: none; font-family: system-ui, sans-serif; font-weight: 500; transition: all 0.2s ease; border: 1px solid rgba(255,255,255,0.1);">
+                <span style="background: #ef4444; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="white" style="margin-left: 2px;">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                </span>
+                <span style="color: white;">▶ Tutorial de Terminal / PowerShell</span>
+            </a>
+
+            <div class="reflexion">
+                <h3>💭 Reflexión personal</h3>
+                <p><strong>¿Por qué elegí este tema?</strong> Porque me voló la cabeza poder crear archivos, leerlos y eliminarlos con solo 3 líneas. Además, las variables me recordaron a la programación básica.</p>
+                <p><strong>¿Dónde se aplica?</strong> Administradores de sistemas, DevOps, ingenieros de soporte: todos usan PowerShell para automatizar tareas como crear usuarios en Active Directory, generar reportes o configurar servidores.</p>
+            </div>
+
+            <a href="index.html" class="boton-volver">← Volver al inicio</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Blog académico - Contenido original basado en laboratorio No. 5.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

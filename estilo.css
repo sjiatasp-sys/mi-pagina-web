@@ -1,0 +1,244 @@
+/* Reset y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #1e2a3e;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header moderno */
+header {
+    background: linear-gradient(135deg, #0b3b5f, #1b4f72);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navegación */
+nav {
+    background: #1e2a3e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #f0f4f8;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #ffb74d;
+    color: #1e2a3e;
+    transform: translateY(-2px);
+}
+
+/* Main contenedor */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    border-left: 6px solid #ffb74d;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    color: #0b3b5f;
+}
+
+h3 {
+    color: #1b4f72;
+    margin: 1.5rem 0 0.8rem 0;
+    font-size: 1.5rem;
+}
+
+/* Grid de tarjetas en la página principal */
+.lista-temas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+}
+
+.card-content {
+    padding: 1.8rem;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #0b3b5f;
+    font-size: 1.6rem;
+}
+
+.card p {
+    margin: 1rem 0;
+    color: #2c3e50;
+}
+
+.card a {
+    display: inline-block;
+    background: #ffb74d;
+    color: #1e2a3e;
+    padding: 0.6rem 1.2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.card a:hover {
+    background: #ff9f2c;
+}
+
+/* Página de cada tema (contenido) */
+.tema-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 32px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.tema-container img, .tema-container video {
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 1rem 0;
+    border: 1px solid #e2e8f0;
+}
+
+pre {
+    background: #1e2a3e;
+    color: #f0f4f8;
+    padding: 1rem;
+    border-radius: 16px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    margin: 1rem 0;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+}
+
+.reflexion {
+    background: #eef2f5;
+    padding: 1.5rem;
+    border-radius: 24px;
+    margin-top: 2rem;
+    border-left: 6px solid #ffb74d;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 2rem;
+    background: #0b3b5f;
+    color: white;
+    padding: 0.7rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.boton-volver:hover {
+    background: #ffb74d;
+    color: #1e2a3e;
+}
+
+footer {
+    background: #1e2a3e;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* Botón modo oscuro (extra) */
+.dark-mode-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ffb74d;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 200;
+}
+
+/* Modo oscuro (simple) */
+body.dark {
+    background: #121826;
+    color: #e2e8f0;
+}
+
+body.dark .tema-container,
+body.dark .card {
+    background: #1e2a3e;
+    color: #e2e8f0;
+}
+
+body.dark .reflexion {
+    background: #0f1724;
+    color: #cbd5e1;
+}
+
+body.dark header {
+    background: linear-gradient(135deg, #0a2a44, #0f3b5c);
+}
+
+body.dark nav {
+    background: #0f1724;
+}

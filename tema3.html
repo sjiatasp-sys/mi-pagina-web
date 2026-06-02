@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MySQL | Blog Académico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>🗄️ MySQL – Bases de datos relacionales</h1>
+        <p>El corazón de las aplicaciones modernas</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#temas">Temas</a>
+    </nav>
+    <main>
+        <div class="tema-container">
+            <h2>📌 ¿Qué es MySQL?</h2>
+            <p>MySQL es un sistema de gestión de bases de datos relacional (RDBMS) de código abierto. Es súper rápido, escalable y usado por empresas como Facebook, Twitter y YouTube. Aprendimos a crear una instancia llamada <strong>UMG</strong> con usuario root y contraseña.</p>
+            
+            <h3>✨ Características principales</h3>
+            <ul>
+                <li><strong>Código abierto</strong> – Gratuito y con gran comunidad.</li>
+                <li><strong>Multiplataforma</strong> – Windows, Linux, macOS.</li>
+                <li><strong>Seguridad</strong> – Control de usuarios y cifrado.</li>
+                <li><strong>Rendimiento rápido</strong> – Ideal para aplicaciones web.</li>
+            </ul>
+
+            <h3>📌 Ejemplo práctico (propio)</h3>
+            <p>En el laboratorio, usando MySQL Workbench, creé una base de datos para una tienda ficticia:</p>
+            <pre><code>CREATE DATABASE tienda;
+USE tienda;
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100),
+    precio DECIMAL(10,2)
+);
+INSERT INTO productos (nombre, precio) VALUES ('Laptop', 750.00), ('Mouse', 25.50);
+SELECT * FROM productos;</code></pre>
+            <p>Así entendí cómo se almacenan los datos en tablas con filas y columnas, y cómo las claves primarias evitan duplicados.</p>
+
+            <h3>🖼️ Recurso multimedia</h3>
+            <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL logo">
+
+
+            <div class="reflexion">
+                <h3>💭 Reflexión personal</h3>
+                <p><strong>¿Por qué elegí este tema?</strong> Porque siempre me pregunté cómo guardan su información las apps. Entender SQL me hizo ver que detrás de cada "iniciar sesión" hay una base de datos verificando credenciales.</p>
+                <p><strong>¿Dónde se aplica?</strong> En sistemas de inventarios, redes sociales, comercio electrónico, hospitales, bancos... cualquier lugar donde se necesite almacenar y consultar datos de forma estructurada.</p>
+            </div>
+
+            <a href="index.html" class="boton-volver">← Volver al inicio</a>
+        </div>
+    </main>
+    <footer>
+        <p>© Blog académico - Basado en laboratorio No. 5 de MySQL.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

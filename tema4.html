@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Básico | Blog Académico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>🌐 HTML – El esqueleto de la web</h1>
+        <p>Etiquetas, atributos y elementos fundamentales</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#temas">Temas</a>
+    </nav>
+    <main>
+        <div class="tema-container">
+            <h2>📌 ¿Qué es HTML?</h2>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado que da estructura y significado al contenido web. No es un lenguaje de programación, sino de etiquetas que el navegador interpreta para mostrar textos, imágenes, enlaces, etc.</p>
+            
+            <h3>🏷️ Etiquetas básicas que aprendí</h3>
+            <ul>
+                <li><code>&lt;a&gt;</code> – Hipervínculo (atributos: href, target).</li>
+                <li><code>&lt;img&gt;</code> – Imagen (src, alt, width).</li>
+                <li><code>&lt;div&gt;</code> – División genérica para agrupar.</li>
+                <li><code>&lt;p&gt;</code> – Párrafo.</li>
+                <li><code>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt;</code> – Listas desordenadas/ordenadas.</li>
+                <li><code>&lt;span&gt;</code> – Contenedor de texto en línea.</li>
+            </ul>
+
+            <h3>📌 Ejemplo práctico (propio)</h3>
+            <p>Para el laboratorio, hice una pequeña página de recetas:</p>
+            <pre><code>&lt;h1&gt;Mi receta favorita&lt;/h1&gt;
+&lt;img src="tacos.jpg" alt="Tacos" width="300"&gt;
+&lt;p&gt;Ingredientes:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Tortillas&lt;/li&gt;
+    &lt;li&gt;Carne&lt;/li&gt;
+    &lt;li&gt;Cebolla&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href="https://www.recetas.com" target="_blank"&gt;Más recetas&lt;/a&gt;</code></pre>
+            <p>Así comprendí cómo los atributos modifican el comportamiento (por ejemplo, <code>target="_blank"</code> abre en nueva pestaña).</p>
+
+            <h3>🖼️ Recurso multimedia</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo" width="150">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <p><small>Video tutorial de HTML básico.</small></p>
+
+            <div class="reflexion">
+                <h3>💭 Reflexión personal</h3>
+                <p><strong>¿Por qué elegí este tema?</strong> Porque fue mi primer contacto con la creación de páginas web. Ver que con pocas etiquetas podía mostrar mi propio contenido me motivó a seguir aprendiendo CSS y JavaScript.</p>
+                <p><strong>¿Dónde se aplica?</strong> Todo sitio web que visitas está hecho con HTML. Desde blogs hasta tiendas en línea. Es la base de cualquier desarrollador frontend.</p>
+            </div>
+
+            <a href="index.html" class="boton-volver">← Volver al inicio</a>
+        </div>
+    </main>
+    <footer>
+        <p>© Blog académico - Laboratorio No. 10: HTML.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

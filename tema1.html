@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comandos CMD | Blog Académico</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>💻 Comandos del sistema de archivos (CMD)</h1>
+        <p>Dominando la interfaz de línea de comandos en Windows</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="index.html#temas">Temas</a>
+    </nav>
+    <main>
+        <div class="tema-container">
+            <h2>📌 ¿Qué son los comandos de sistema de archivos?</h2>
+            <p>Son instrucciones que escribimos en el Símbolo del sistema (CMD) para interactuar directamente con los archivos y carpetas del sistema operativo. A diferencia del explorador gráfico, aquí todo es por texto, pero es mucho más rápido para tareas repetitivas o avanzadas.</p>
+            
+            <h3>🛠️ Comandos básicos que aprendí</h3>
+            <ul>
+                <li><strong>systeminfo</strong> – Muestra información detallada del equipo (SO, RAM, red).</li>
+                <li><strong>dir</strong> – Lista archivos y carpetas del directorio actual.</li>
+                <li><strong>cd</strong> – Cambia de directorio. Ej: <code>cd Desktop</code>.</li>
+                <li><strong>md</strong> – Crea una carpeta nueva. Ej: <code>md UMGLab1</code>.</li>
+                <li><strong>cd..</strong> – Sube un nivel en el árbol de carpetas.</li>
+                <li><strong>tree</strong> – Muestra gráficamente el árbol de directorios.</li>
+                <li><strong>copy con</strong> – Crea un archivo de texto desde la terminal.</li>
+            </ul>
+
+            <h3>📌 Ejemplo práctico (propio)</h3>
+            <p>En mi laboratorio real, tuve que crear esta estructura:</p>
+            <pre>
+<code>C:\Users\UMG> md UMGLab1
+C:\Users\UMG> md UMGLab2
+C:\Users\UMG> cd UMGLab2
+C:\Users\UMG\UMGLab2> md UMGLab4\UMGLab5\UMGLab6
+C:\Users\UMG\UMGLab2> tree
+├───UMGLab4
+│   └───UMGLab5
+│       └───UMGLab6</code></pre>
+            <p>Luego usé <code>copy con Hola.txt</code> para escribir un texto sobre PowerShell. Esa experiencia me enseñó a manipular archivos sin necesidad de ratón.</p>
+
+            <h3>Recurso de multimedia </h3>
+<img src="img/comandos.webp"
+     alt="Ejemplo de comandos CMD"
+     style="max-width:100%;">            <p><small>Imagen ilustrativa de una terminal CMD (fuente: IONOS).</small></p>
+
+            <div class="reflexion">
+                <h3>💭 Reflexión personal</h3>
+                <p><strong>¿Por qué elegí este tema?</strong> Porque al principio me daba miedo la "pantalla negra" llena de texto, pero cuando entendí que cada comando hace algo concreto, me sentí como un hacker real. Además, es la base para administrar servidores sin interfaz gráfica.</p>
+                <p><strong>¿Dónde se aplica?</strong> En la vida laboral, los administradores de sistemas usan CMD o PowerShell a diario para instalar software, crear backups, diagnosticar redes o automatizar tareas. Incluso en entornos Linux se usan comandos similares.</p>
+            </div>
+
+            <a href="index.html" class="boton-volver">← Volver al inicio</a>
+        </div>
+    </main>
+    <footer>
+        <p>© Blog académico - Contenido original con ejemplos de laboratorio.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
